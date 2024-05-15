@@ -11,10 +11,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url('images/5073414.jpg');
+    background-image: url('../images/5073414.jpg');
     /* href="https://www.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_12804207.htm#query=computer%20background&position=0&from_view=keyword&track=ais_user&uuid=fd2dca36-4c6f-4660-92d0-2189bff01897">Image by coolvector> on Freepik> */
     background-attachment: fixed;
-    background-position: contain;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fdfdfd;
@@ -38,6 +37,7 @@ header {
     font-style: italic;
     font-weight: 700;
     letter-spacing: 1px;
+    text-shadow: 5px  5px 1rem black;
 }
 
 span{
@@ -352,7 +352,22 @@ section {
     width: 60%;
     animation-delay: 0.3s;
 }
-
+.skill-per.creat {
+    width: 95%;
+    animation-delay: 0.1s;
+}
+.skill-per.problem {
+    width: 90%;
+    animation-delay: 0.1s;
+}
+.skill-per.commeuni {
+    width: 91%;
+    animation-delay: 0.1s;
+}
+.skill-per.team {
+    width: 97%;
+    animation-delay: 0.1s;
+}
 @keyframes progress {
     0% {
         width: 0;
@@ -403,7 +418,7 @@ section {
         left: 0;
         right: 0;
         flex-direction: column;
-        background: url('images/5073414.jpg');
+        background: url('../images/5073414.jpg');
         text-align: left;
         padding: 0 5%;
 
@@ -461,6 +476,9 @@ section {
 
     .right-skill {
         margin-top: 20px;
+    }
+    .container {
+        margin: 20px 0; /* Margin for small screens */
     }
 }
 
