@@ -11,7 +11,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url('../images/5073414.jpg');
+    background-image: url('../public/images/5073414.jpg');
     /* href="https://www.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_12804207.htm#query=computer%20background&position=0&from_view=keyword&track=ais_user&uuid=fd2dca36-4c6f-4660-92d0-2189bff01897">Image by coolvector> on Freepik> */
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ section {
         left: 0;
         right: 0;
         flex-direction: column;
-        background: url('../images/5073414.jpg');
+        background: url('../public/images/5073414.jpg');
         text-align: left;
         padding: 0 5%;
 
