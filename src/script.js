@@ -1,3 +1,5 @@
+import './index.css'
+import 'flowbite'
 
 let words = document.querySelectorAll('.word');
 
