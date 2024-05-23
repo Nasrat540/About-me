@@ -174,15 +174,13 @@ section {
     position: relative;
 }
 .aboutim {
-    height: 400px;
-    width: 600px;
+    height: 200px;
+    width: 200px;
     border-radius: 1% 99% 56% 44% / 60% 55% 45% 40%;
     box-shadow: 1px 1px 20px red;
 }
 .aboutme {
     display: flex;
-    justify-content: center;
-    align-items: center;
     grid-gap: 2em;
 }
 .ima-about {
