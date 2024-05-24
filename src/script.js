@@ -46,31 +46,24 @@ document.getElementById("menuicon").addEventListener("click", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Tab buttons
-    const tabs = document.querySelectorAll('[data-tabs-target]');
-    const tabContents = document.querySelectorAll('[role="tabpanel"]');
+    const tabsSelect = document.getElementById('tabs');
+    const educationTab = document.getElementById('stats');
+    const experienceTab = document.getElementById('about');
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Deactivate all tabs and tab contents
-            tabs.forEach(t => t.classList.remove('active', 'bg-white', 'text-gray-900'));
-            tabContents.forEach(tc => tc.classList.add('hidden'));
+    function showTab(tabId) {
+        if (tabId === 'education') {
+            educationTab.classList.remove('hidden');
+            experienceTab.classList.add('hidden');
+        } else if (tabId === 'experience') {
+            educationTab.classList.add('hidden');
+            experienceTab.classList.remove('hidden');
+        }
+    }
 
-            // Activate the clicked tab and corresponding tab content
-            tab.classList.add('active', 'bg-white', 'text-gray-900');
-            document.querySelector(tab.dataset.tabsTarget).classList.remove('hidden');
-        });
+    tabsSelect.addEventListener('change', function () {
+        showTab(this.value);
     });
 
-    // Dropdown for mobile
-    const tabSelect = document.getElementById('tabs');
-    tabSelect.addEventListener('change', function () {
-        const selectedTab = document.querySelector(this.value);
-
-        // Deactivate all tab contents
-        tabContents.forEach(tc => tc.classList.add('hidden'));
-
-        // Activate the selected tab content
-        selectedTab.classList.remove('hidden');
-    });
+    // Initialize the correct tab based on the current selection
+    showTab(tabsSelect.value);
 });

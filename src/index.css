@@ -18,6 +18,9 @@ body{
     background-size: cover;
     color: #fdfdfd;
 }
+.hidden {
+    display: none;
+}
 
 header {
     position: fixed;
@@ -35,13 +38,22 @@ header {
 .logo{
     font-size: 26px;
     font-style: italic;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 1000;
+    letter-spacing: 3px;
     text-shadow: 5px  5px 1rem black;
 }
+.text-with-image {
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    background: url('../public/images/new1.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
 
 span{
-    color:  red;
+    color:  black;
 }
 .navelist{
     display: flex;
@@ -98,6 +110,7 @@ section {
 .text-ch{
     font-size: 1.5rem;
     font-weight: 600;
+    color: red;
 }
 .home-content p{
     margin-top: 2.2rem;
@@ -176,8 +189,8 @@ section {
 .aboutim {
     height: 200px;
     width: 200px;
-    border-radius: 1% 99% 56% 44% / 60% 55% 45% 40%;
-    box-shadow: 1px 1px 20px red;
+    border-radius: 1% 99% 56% 44% / 60% 55% 45% 50%;
+    box-shadow: 1px 1px 20px blue;
 }
 .aboutme {
     display: flex;
@@ -504,6 +517,10 @@ ul {
     background-color: #ff0000;
 }
 
+.sm\:hidden {
+    display: block;
+}
+
 @media(max-width: 768px) {
     #menuicon{
         display: block;
@@ -578,7 +595,20 @@ ul {
     .container {
         margin: 20px 0; /* Margin for small screens */
     }
+    .sm\:hidden {
+        display: block;
+    }
+    .sm\:flex {
+        display: none;
+    }
 }
-
+@media (min-width: 641px) {
+    .sm\:hidden {
+        display: none;
+    }
+    .sm\:flex {
+        display: flex;
+    }
+}
 
 

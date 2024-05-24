@@ -14,7 +14,9 @@
 <!--<!..Header..>-->
 
 <header>
-    <div class="logo"><span>Zubiar.N</span></div>
+    <div class="logo">
+        <span class="text-with-image">Zubiar.N</span>
+    </div>
     <ul class="navelist">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -24,6 +26,8 @@
     </ul>
     <div id="menuicon" class="bx bx-menu"></div>
 </header>
+
+
 <!--Header section-->
 
 <section id="home" class="home">
@@ -31,11 +35,11 @@
         <h1>Zubiar&nbsp;Nasrat</h1>
         <div class="text-ch">
             <h3>
-                <span class="word">Web&nbsp;designer</span>
-                <span class="word">Backened&nbsp;developer</span>
-                <span class="word">Data&nbsp;analyst</span>
-                <span class="word">python&nbsp;developer</span>
-                <span class="word">Javascript</span>
+                <span class="word text-red-700">Web&nbsp;designer</span>
+                <span class="word text-red-600">Backened&nbsp;developer</span>
+                <span class="word text-red-500">Data&nbsp;analyst</span>
+                <span class="word text-red-400">python&nbsp;developer</span>
+                <span class="word text-red-300">Javascript</span>
             </h3>
         </div>
 
@@ -44,11 +48,11 @@
         <div class="emailbox">
             <div class="emial-list1">
                 <h5>Personal email:</h5>
-                <span>zubiar.mm@gmail.com</span>
+                <span class="text-green-500">zubiar.mm@gmail.com</span>
             </div>
             <div class="emial-list2">
                 <h5>Educational email:</h5>
-                <span>mzubiarnasrat@cnm.edu</span>
+                <span class="text-green-500">mzubiarnasrat@cnm.edu</span>
             </div>
             <button class="btn">
                 <i class="animation"></i>Download CV<i class="animation"></i>
@@ -74,91 +78,110 @@
         </button>
     </div>
     <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="sm:hidden">
-            <label for="tabs" class="sr-only">Select tab</label>
-            <select id="tabs" class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option>Education</option>
-                <option>Experiences</option>
-            </select>
-        </div>
+        <!-- Dropdown for small screens -->
+        <!-- Existing HTML Structure for Desktop Tabs (remains unchanged) -->
         <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
             <li class="w-full">
                 <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Education</button>
             </li>
             <li class="w-full">
-                <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Experiences</button>
+                <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Experience</button>
             </li>
         </ul>
+
+        <!-- Dropdown for small screens -->
+        <div class="sm:hidden">
+            <label for="tabs" class="sr-only">Select tab</label>
+            <select id="tabs" class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option value="education">Education</option>
+                <option value="experience">Experience</option>
+            </select>
+        </div>
+
+        <!-- Tab content (remains unchanged) -->
         <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
             <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Developers</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Public repositories</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Open source projects</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">1B+</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Contributors</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">90+</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Top Forbes companies</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">4M+</dt>
-                        <dd class="text-gray-500 dark:text-gray-400">Organizations</dd>
-                    </div>
-                </dl>
+                <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">My Education details</h2>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-gray-700 dark:text-gray-400">
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Bachelor's Degree in Computer Science and Information Systems(2014-2018)</span>
+                            <p>Achived my Bachelor degree in Computer Science in 2018 from Kabul University faculity of Computer Science with a reward and best student in calss</p>
+                        </div>
+                    </li>
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Google Data Analytics Professional Certificate(2024)</span>
+                            <p>Got my Google Data Analyst Certificate which covers: Ask Questions to Make Data-Driven Decisions, Foundations: Data, Data, Everywhere, Analyze Data to Answer Questions, Prepare Data for Exploration, and Process Data from Dirty to Clean </p>
+                        </div>
+                    </li>
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Deep Dive Coding Bootcamp(2024)</span>
+                            <p>Coding Bootcamp Fullstack Web Developer that covered the backend and frontend. The tools and languages we learned include JavaScript, React, Tailwind, HTML, CSS, Express, Next.js, and how to work with GitHub.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
-                <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">We invest in the world’s potential</h2>
+                <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">My Experience details</h2>
                 <!-- List -->
                 <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="leading-tight">Dynamic reports and dashboards</span>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Customer Services at Coronado Mall(2020-2021)</span>
+                            <p>Sales: Case, Cover, Phone, and support customers by fixing any physical or electrical problems with their mobile devices. </p>
+                        </div>
                     </li>
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="leading-tight">Templates for everyone</span>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Technical Customer Support at Concentrix(2021-2022)</span>
+                            <p>Help Desk at Concentrix: Online remote work from home. I used to help customers with online orders for delivery, troubleshooting their online accounts, and resolving security issues with logging into the website. </p>
+                        </div>
                     </li>
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <li class="flex space-x-2 rtl:space-x-reverse items-start">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="leading-tight">Development workflow</span>
-                    </li>
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Limitless business automation</span>
+                        <div class="flex flex-col">
+                            <span class="leading-tight">Deep Dive Coding Bootcamp(2024)</span>
+                            <p>Coding Bootcamp Fullstack Web Developer that covered the backend and frontend. The tools and languages we learned include JavaScript, React, Tailwind, HTML, CSS, Express, Next.js, and how to work with GitHub.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
+
     </div>
 </section>
+
 <section class="skillone">
     <div class="skill-title">
         <h3>Skills:</h3>
     </div>
     <div class="container-wrapper">
         <div class="container">
+            <h1 class="text-xl font-bold text-center text-blue-600 mt-5 mb-3">
+                Technical skill :
+            </h1>
             <div class="skill-box">
-                <span class="title">HTML</span>
+                <span class="title">React</span>
                 <div class="skill-bar">
                 <span class="skill-per html">
                     <span class="tooltip">80%</span>
@@ -166,7 +189,7 @@
                 </div>
             </div>
             <div class="skill-box">
-                <span class="title">CSS</span>
+                <span class="title">Tailwind CSS</span>
                 <div class="skill-bar">
                 <span class="skill-per css">
                     <span class="tooltip">85%</span>
@@ -191,6 +214,9 @@
             </div>
         </div>
         <div class="container">
+            <h1 class="text-xl font-bold text-center text-blue-600 mt-5 mb-3">
+                Social skill :
+            </h1>
             <div class="skill-box">
                 <span class="title">Creativity</span>
                 <div class="skill-bar">
@@ -312,7 +338,7 @@
 <section class="contact" id="contact">
     <div class="flex flex-col md:flex-row md:gap-8">
           <div class="contact-first flex-1 p-4 mb-4 md:mb-0">
-              <h1 class="text-blue-400 text-3xl">Contact me:</h1>
+              <h1 class="text-blue-600 text-3xl">Contact me:</h1>
           <p class="mb-3 font-normal text-lg text-white dark:text-gray-400">Here are the biggest enterprise technology acquisitions
               if you have any question <br> or want to ask anything about my project or my expreince and also education
               <br>you can contact me any time I will response to you as soon as possiable.</p>
