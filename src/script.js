@@ -37,7 +37,7 @@ window.addEventListener('scroll', activeMenu);
 
 
 document.getElementById("menuicon").addEventListener("click", function () {
-    let navList = document.querySelector(".navelist");
+    let navList = document.querySelector(".nave-list");
     navList.classList.toggle("show");
 });
 
@@ -64,6 +64,18 @@ document.addEventListener('DOMContentLoaded', function () {
         showTab(this.value);
     });
 
-    // Initialize the correct tab based on the current selection
     showTab(tabsSelect.value);
 });
+
+// read more
+document.getElementById('read').addEventListener('click', function () {
+
+    let moreText = document.getElementById('moreText');
+    if (moreText.classList.contains('hidden')) {
+        moreText.classList.remove('hidden');
+        this.textContent = 'Read Less';
+    } else {
+        moreText.classList.add('hidden');
+        this.textContent = 'Read More';
+    }
+})
