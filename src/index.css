@@ -33,13 +33,14 @@ header {
 }
 
 .logo{
-    font-size: 26px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 1000;
-    letter-spacing: 3px;
     text-shadow: 5px  5px 1rem black;
 }
+
 .text-with-image {
+    letter-spacing: 3px;
     font-size: 3rem; /* Adjust font size as needed */
     font-weight: bold; /* Make the text bold */
     background: url('../public/images/IMG_3231.jpg');
@@ -47,7 +48,9 @@ header {
     color: transparent;
     background-clip: text;
 }
-
+.portfolio {
+    letter-spacing: 10px;
+}
 
 span{
     color: black;
